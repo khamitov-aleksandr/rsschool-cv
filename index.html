@@ -14,18 +14,18 @@
   <table>
     <tr>
       <td><b>phone number</b></td>
-      <td><i>+7-915-624-92-43</i></td>
+      <td><i>&nbsp &nbsp &nbsp +7-915-624-92-43</i></td>
     </tr>
     <tr>
       <td>email</td>
-      <td>Khamitov-aleksandr@gmail.com*</td>
+      <td>&nbsp &nbsp &nbsp Khamitov-aleksandr@gmail.com</td>
     </tr>
     <tr>
       <td>
         Nikname in rs school
       </td>
       <td>
-        Aleksandr (khamitov-aleksandr)
+        &nbsp &nbsp &nbsp Aleksandr (khamitov-aleksandr)
       </td>
   </table>
   <hr>
@@ -39,26 +39,32 @@
     <li>JS</li>
     <li>React</li>
   </ul>
+  <hr>
   <h2>Code example</h2>
-  <abbr>
-    function App() {
-    const listItems = topDesserts.map(dessert => {
-      const itemText = `${dessert.title} - ${dessert.price}`
-      return <li>{itemText}</li>
-    })
-    return (
-      <div className="App">
-        <ul>
-          {listItems}
-        </ul>
-        <h2>List of low calorie desserts:</h2>
-        <DessertsList data={desserts} />
-      </div>
-    );
-  }
+  <code>
+    let activeIndex = 0;<Br>
 
-  export default App;
-  </abbr>
+    &nbsp const groups = document.getElementByClassName("card-group");<Br>
+
+    &nbsp const handleLoveClick = () => {<Br>
+
+    &nbsp &nbsp const nextIndex = activeIndex + 1 <= group.length -1 ? activeIndex + 1 : 0;<Br>
+
+    &nbsp &nbsp const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),<Br>
+    &nbsp &nbsp &nbsp nextGroup = document.querySelector(`[data-index="${nextIndex}"]`);<Br>
+
+    &nbsp &nbsp &nbsp currentGroup.dataset.status = "after";<Br>
+
+    &nbsp &nbsp &nbsp nextGroup.dataset.status = "becoming-active-from-before";<Br>
+
+    &nbsp &nbsp setTimeout(() => {<Br>
+    &nbsp &nbsp &nbsp nextGroup.dataset.status = "active";<Br>
+
+    &nbsp &nbsp &nbsp activeIndex = nextIndex;<Br>
+    &nbsp &nbsp });<Br>
+
+    }<Br>
+  </code>
   <hr>
   <h2>Experience</h2>
   <p>I have experience in an international company.</p>
@@ -79,6 +85,3 @@
   </ol>
 </body>
 </html>
-
-
-
